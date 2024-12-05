@@ -11,5 +11,8 @@ package models
 type BundledProductOffering struct {
 	BundledProductOfferingOption *BundledProductOfferingOption `json:"bundledProductOfferingOption,omitempty"`
 	// Version of the product offering
-	Version string `json:"version,omitempty"`
+	Version        string `json:"version,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

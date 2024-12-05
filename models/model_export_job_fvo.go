@@ -30,5 +30,8 @@ type ExportJobFvo struct {
 	// URL of the file containing the data to be exported
 	Url string `json:"url"`
 	// unique identifier for export job
-	Id string `json:"id,omitempty"`
+	Id             string `json:"id,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

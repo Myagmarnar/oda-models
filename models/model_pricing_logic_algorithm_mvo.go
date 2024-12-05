@@ -16,5 +16,8 @@ type PricingLogicAlgorithmMvo struct {
 	// id of corresponding PricingLogicAlgorithm specification
 	PlaSpecId string `json:"plaSpecId,omitempty"`
 
-	ValidFor *TimePeriod `json:"validFor,omitempty"`
+	ValidFor       *TimePeriod `json:"validFor,omitempty"`
+	Type           string      `json:"@type,omitempty"`
+	SchemaLocation string      `json:"@schemaLocation,omitempty"`
+	BaseType       string      `json:"@baseType,omitempty"`
 }

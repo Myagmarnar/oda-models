@@ -10,5 +10,8 @@ package models
 
 // ExportJobCreateEventPayload generic structure
 type ExportJobCreateEventPayload struct {
-	ExportJob *ExportJob `json:"exportJob,omitempty"`
+	ExportJob      *ExportJob `json:"exportJob,omitempty"`
+	Type           string     `json:"@type,omitempty"`
+	SchemaLocation string     `json:"@schemaLocation,omitempty"`
+	BaseType       string     `json:"@baseType,omitempty"`
 }

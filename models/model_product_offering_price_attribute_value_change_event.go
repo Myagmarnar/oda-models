@@ -43,5 +43,8 @@ type ProductOfferingPriceAttributeValueChangeEvent struct {
 	// Time of the event occurrence.
 	EventTime time.Time `json:"eventTime,omitempty"`
 	// The type of the notification.
-	EventType string `json:"eventType,omitempty"`
+	EventType      string `json:"eventType,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

@@ -18,5 +18,8 @@ type PricingLogicAlgorithmFvo struct {
 
 	ValidFor *TimePeriod `json:"validFor,omitempty"`
 	// unique identifier
-	Id string `json:"id,omitempty"`
+	Id             string `json:"id,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

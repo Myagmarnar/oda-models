@@ -11,4 +11,7 @@ package models
 // ProductSpecificationDeleteEventPayload generic structure
 type ProductSpecificationDeleteEventPayload struct {
 	ProductSpecification *ProductSpecification `json:"productSpecification,omitempty"`
+	Type                 string                `json:"@type,omitempty"`
+	SchemaLocation       string                `json:"@schemaLocation,omitempty"`
+	BaseType             string                `json:"@baseType,omitempty"`
 }

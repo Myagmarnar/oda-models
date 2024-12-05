@@ -26,5 +26,8 @@ type ObjectCharacteristicValueSpecification struct {
 	// An indicator that specifies the inclusion or exclusion of the valueFrom and valueTo attributes. If applicable, possible values are \"open\", \"closed\", \"closedBottom\" and \"closedTop\".
 	RangeInterval string `json:"rangeInterval,omitempty"`
 	// A regular expression constraint for given value
-	Regex string `json:"regex,omitempty"`
+	Regex          string `json:"regex,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

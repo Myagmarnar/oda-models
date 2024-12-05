@@ -31,5 +31,8 @@ type BaseEventMvo struct {
 	// A priority.
 	Priority string `json:"priority,omitempty"`
 	// The time the event occured.
-	TimeOcurred time.Time `json:"timeOcurred,omitempty"`
+	TimeOcurred    time.Time `json:"timeOcurred,omitempty"`
+	Type           string    `json:"@type,omitempty"`
+	SchemaLocation string    `json:"@schemaLocation,omitempty"`
+	BaseType       string    `json:"@baseType,omitempty"`
 }

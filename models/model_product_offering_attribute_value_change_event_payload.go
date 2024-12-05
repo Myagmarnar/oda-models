@@ -11,4 +11,7 @@ package models
 // ProductOfferingAttributeValueChangeEventPayload generic structure
 type ProductOfferingAttributeValueChangeEventPayload struct {
 	ProductOffering *ProductOffering `json:"productOffering,omitempty"`
+	Type            string           `json:"@type,omitempty"`
+	SchemaLocation  string           `json:"@schemaLocation,omitempty"`
+	BaseType        string           `json:"@baseType,omitempty"`
 }

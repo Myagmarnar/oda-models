@@ -10,5 +10,8 @@ package models
 
 // CategoryAttributeValueChangeEventPayload generic structure
 type CategoryAttributeValueChangeEventPayload struct {
-	Category *Category `json:"category,omitempty"`
+	Category       *Category `json:"category,omitempty"`
+	Type           string    `json:"@type,omitempty"`
+	SchemaLocation string    `json:"@schemaLocation,omitempty"`
+	BaseType       string    `json:"@baseType,omitempty"`
 }

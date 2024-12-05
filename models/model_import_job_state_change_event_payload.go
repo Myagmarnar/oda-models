@@ -10,5 +10,8 @@ package models
 
 // ImportJobStateChangeEventPayload generic structure
 type ImportJobStateChangeEventPayload struct {
-	ImportJob *ImportJob `json:"importJob,omitempty"`
+	ImportJob      *ImportJob `json:"importJob,omitempty"`
+	Type           string     `json:"@type,omitempty"`
+	SchemaLocation string     `json:"@schemaLocation,omitempty"`
+	BaseType       string     `json:"@baseType,omitempty"`
 }

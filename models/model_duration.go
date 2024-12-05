@@ -13,5 +13,8 @@ type Duration struct {
 	// Time interval (number of seconds, minutes, hours, etc.)
 	Amount int32 `json:"amount,omitempty"`
 	// Unit of time (seconds, minutes, hours, etc.)
-	Units string `json:"units,omitempty"`
+	Units          string `json:"units,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

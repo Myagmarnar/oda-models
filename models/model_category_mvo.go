@@ -26,5 +26,8 @@ type CategoryMvo struct {
 	// Used to indicate the current lifecycle status
 	LifecycleStatus string `json:"lifecycleStatus,omitempty"`
 	// Name of the category
-	Name string `json:"name,omitempty"`
+	Name           string `json:"name,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

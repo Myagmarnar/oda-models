@@ -13,5 +13,8 @@ type Money struct {
 	// Currency (ISO4217 norm uses 3 letters to define the currency)
 	Unit string `json:"unit,omitempty"`
 	// A signed floating point number, the meaning of the sign is according to the context of the API that uses this Data type
-	Value float32 `json:"value,omitempty"`
+	Value          float32 `json:"value,omitempty"`
+	Type           string  `json:"@type,omitempty"`
+	SchemaLocation string  `json:"@schemaLocation,omitempty"`
+	BaseType       string  `json:"@baseType,omitempty"`
 }

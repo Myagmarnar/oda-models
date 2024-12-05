@@ -51,4 +51,7 @@ type ProductOfferingPriceMvo struct {
 	LifecycleStatus string `json:"lifecycleStatus,omitempty"`
 	// List of external identifieers for the offering price, e.g. identifier in source catalog
 	ExternalIdentifier []ExternalIdentifierMvo `json:"externalIdentifier,omitempty"`
+	Type               string                  `json:"@type,omitempty"`
+	SchemaLocation     string                  `json:"@schemaLocation,omitempty"`
+	BaseType           string                  `json:"@baseType,omitempty"`
 }

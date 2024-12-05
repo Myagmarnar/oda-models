@@ -9,5 +9,8 @@
 package models
 
 type MapArrayCharacteristicValueSpecificationValue struct {
-	Value map[string]interface{} `json:"value,omitempty"`
+	Value          map[string]interface{} `json:"value,omitempty"`
+	Type           string                 `json:"@type,omitempty"`
+	SchemaLocation string                 `json:"@schemaLocation,omitempty"`
+	BaseType       string                 `json:"@baseType,omitempty"`
 }

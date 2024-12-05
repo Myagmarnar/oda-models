@@ -34,5 +34,8 @@ type CategoryFvo struct {
 	// Name of the category
 	Name string `json:"name"`
 	// unique identifier
-	Id string `json:"id,omitempty"`
+	Id             string `json:"id,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

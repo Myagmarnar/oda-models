@@ -11,4 +11,7 @@ package models
 // ProductCatalogDeleteEventPayload generic structure
 type ProductCatalogDeleteEventPayload struct {
 	ProductCatalog *ProductCatalog `json:"productCatalog,omitempty"`
+	Type           string          `json:"@type,omitempty"`
+	SchemaLocation string          `json:"@schemaLocation,omitempty"`
+	BaseType       string          `json:"@baseType,omitempty"`
 }

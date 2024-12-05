@@ -11,4 +11,7 @@ package models
 // ProductCatalogAttributeValueChangeEventPayload generic structure
 type ProductCatalogAttributeValueChangeEventPayload struct {
 	ProductCatalog *ProductCatalog `json:"productCatalog,omitempty"`
+	Type           string          `json:"@type,omitempty"`
+	SchemaLocation string          `json:"@schemaLocation,omitempty"`
+	BaseType       string          `json:"@baseType,omitempty"`
 }

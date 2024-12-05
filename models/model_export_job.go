@@ -32,5 +32,8 @@ type ExportJob struct {
 	// unique identifier for export job
 	Id string `json:"id,omitempty"`
 	// Hyperlink reference
-	Href string `json:"href,omitempty"`
+	Href           string `json:"href,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

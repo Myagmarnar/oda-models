@@ -24,5 +24,8 @@ type AttachmentMvo struct {
 	// a business characterization of the purpose of the attachment, for example logo, instructionManual, contractCopy
 	AttachmentType string `json:"attachmentType,omitempty"`
 	// a technical characterization of the attachment content format using IETF Mime Types
-	MimeType string `json:"mimeType,omitempty"`
+	MimeType       string `json:"mimeType,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

@@ -18,5 +18,8 @@ type ResourceSpecificationRefFvo struct {
 	// Name of the referred entity.
 	Name string `json:"name,omitempty"`
 	// The actual type of the target instance when needed for disambiguation.
-	ReferredType string `json:"@referredType,omitempty"`
+	ReferredType   string `json:"@referredType,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

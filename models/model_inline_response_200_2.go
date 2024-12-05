@@ -10,4 +10,7 @@ package models
 
 type InlineResponse2002 struct {
 	ProductOffering
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

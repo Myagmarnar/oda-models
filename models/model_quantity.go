@@ -13,5 +13,8 @@ type Quantity struct {
 	// Numeric value in a given unit
 	Amount float32 `json:"amount,omitempty"`
 	// Unit
-	Units string `json:"units,omitempty"`
+	Units          string `json:"units,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

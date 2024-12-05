@@ -11,4 +11,7 @@ package models
 type PartyRefOrPartyRoleRefFvo struct {
 	PartyRefFvo
 	PartyRoleRefFvo
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

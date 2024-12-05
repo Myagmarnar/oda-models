@@ -17,5 +17,8 @@ type Hub struct {
 	// additional data to be passed
 	Query string `json:"query,omitempty"`
 	// Hyperlink reference
-	Href string `json:"href,omitempty"`
+	Href           string `json:"href,omitempty"`
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

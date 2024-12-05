@@ -17,5 +17,8 @@ type TimePeriod struct {
 	// Start of the time period, using IETC-RFC-3339 format
 	StartDateTime time.Time `json:"startDateTime,omitempty"`
 	// End of the time period, using IETC-RFC-3339 format
-	EndDateTime time.Time `json:"endDateTime,omitempty"`
+	EndDateTime    time.Time `json:"endDateTime,omitempty"`
+	Type           string    `json:"@type,omitempty"`
+	SchemaLocation string    `json:"@schemaLocation,omitempty"`
+	BaseType       string    `json:"@baseType,omitempty"`
 }

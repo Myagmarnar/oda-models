@@ -4427,7 +4427,7 @@ components:
             description: Description of this catalog
           catalogType:
             type: string
-            description: "Type of this Catalog, like Product, Service, Resource etc."
+            description: "Type_ of this Catalog, like Product, Service, Resource etc."
           validFor:
             $ref: '#/components/schemas/TimePeriod'
           version:
@@ -4466,7 +4466,7 @@ components:
             description: Description of this catalog
           catalogType:
             type: string
-            description: "Type of this Catalog, like Product, Service, Resource etc."
+            description: "Type_ of this Catalog, like Product, Service, Resource etc."
           validFor:
             $ref: '#/components/schemas/TimePeriod'
           version:
@@ -4503,7 +4503,7 @@ components:
             description: Description of this catalog
           catalogType:
             type: string
-            description: "Type of this Catalog, like Product, Service, Resource etc."
+            description: "Type_ of this Catalog, like Product, Service, Resource etc."
           validFor:
             $ref: '#/components/schemas/TimePeriod'
           version:
@@ -4975,7 +4975,7 @@ components:
         properties:
           relationshipType:
             type: string
-            description: "Type of relationship such as aggregation, migration, substitution,\
+            description: "Type_ of relationship such as aggregation, migration, substitution,\
               \ dependency, exclusivity"
           name:
             type: string
@@ -5013,7 +5013,7 @@ components:
         properties:
           relationshipType:
             type: string
-            description: "Type of relationship such as aggregation, migration, substitution,\
+            description: "Type_ of relationship such as aggregation, migration, substitution,\
               \ dependency, exclusivity"
           name:
             type: string
@@ -5051,7 +5051,7 @@ components:
         properties:
           relationshipType:
             type: string
-            description: "Type of relationship such as aggregation, migration, substitution,\
+            description: "Type_ of relationship such as aggregation, migration, substitution,\
               \ dependency, exclusivity"
           name:
             type: string
@@ -5905,7 +5905,7 @@ components:
             example: MagentoCommerce
           externalIdentifierType:
             type: string
-            description: "Type of the identification, typically would be the type\
+            description: "Type_ of the identification, typically would be the type\
               \ of the entity within the external system"
             example: ProductOrder
           id:
@@ -5938,7 +5938,7 @@ components:
             example: MagentoCommerce
           externalIdentifierType:
             type: string
-            description: "Type of the identification, typically would be the type\
+            description: "Type_ of the identification, typically would be the type\
               \ of the entity within the external system"
             example: ProductOrder
           id:
@@ -5969,7 +5969,7 @@ components:
             example: MagentoCommerce
           externalIdentifierType:
             type: string
-            description: "Type of the identification, typically would be the type\
+            description: "Type_ of the identification, typically would be the type\
               \ of the entity within the external system"
             example: ProductOrder
           id:
@@ -7873,7 +7873,7 @@ components:
             $ref: '#/components/schemas/TimePeriod'
           relationshipType:
             type: string
-            description: "Type of relationship between product offerings such as requires,\
+            description: "Type_ of relationship between product offerings such as requires,\
               \ exchangableTo, optionalFor"
           version:
             type: string
@@ -7901,7 +7901,7 @@ components:
             $ref: '#/components/schemas/TimePeriod'
           relationshipType:
             type: string
-            description: "Type of relationship between product offerings such as requires,\
+            description: "Type_ of relationship between product offerings such as requires,\
               \ exchangableTo, optionalFor"
           version:
             type: string
@@ -7929,7 +7929,7 @@ components:
             $ref: '#/components/schemas/TimePeriod'
           relationshipType:
             type: string
-            description: "Type of relationship between product offerings such as requires,\
+            description: "Type_ of relationship between product offerings such as requires,\
               \ exchangableTo, optionalFor"
           version:
             type: string

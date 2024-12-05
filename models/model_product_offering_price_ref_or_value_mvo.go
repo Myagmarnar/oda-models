@@ -12,4 +12,7 @@ package models
 type ProductOfferingPriceRefOrValueMvo struct {
 	ProductOfferingPriceMvo
 	ProductOfferingPriceRefMvo
+	Type           string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }
