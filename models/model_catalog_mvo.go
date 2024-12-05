@@ -15,7 +15,7 @@ import (
 type CatalogMvo struct {
 	// Description of this catalog
 	Description string `json:"description,omitempty"`
-	// Type of this Catalog, like Product, Service, Resource etc.
+	// Type_ of this Catalog, like Product, Service, Resource etc.
 	CatalogType string `json:"catalogType,omitempty"`
 
 	ValidFor *TimePeriod `json:"validFor,omitempty"`
@@ -28,5 +28,8 @@ type CatalogMvo struct {
 	// Used to indicate the current lifecycle status
 	LifecycleStatus string `json:"lifecycleStatus,omitempty"`
 	// Name of the catalog
-	Name string `json:"name,omitempty"`
+	Name           string `json:"name,omitempty"`
+	Type_          string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

@@ -33,5 +33,8 @@ type BaseEventFvo struct {
 	// The time the event occured.
 	TimeOcurred time.Time `json:"timeOcurred,omitempty"`
 	// unique identifier
-	Id string `json:"id,omitempty"`
+	Id             string `json:"id,omitempty"`
+	Type_          string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

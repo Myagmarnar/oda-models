@@ -15,7 +15,7 @@ type ProductOfferingRelationship struct {
 	Name string `json:"name,omitempty"`
 
 	ValidFor *TimePeriod `json:"validFor,omitempty"`
-	// Type of relationship between product offerings such as requires, exchangableTo, optionalFor
+	// Type_ of relationship between product offerings such as requires, exchangableTo, optionalFor
 	RelationshipType string `json:"relationshipType,omitempty"`
 	// Version of the referred product offering.
 	Version string `json:"version,omitempty"`
@@ -24,5 +24,8 @@ type ProductOfferingRelationship struct {
 	// The identifier of the referred entity.
 	Id string `json:"id"`
 	// The actual type of the target instance when needed for disambiguation.
-	ReferredType string `json:"@referredType,omitempty"`
+	ReferredType   string `json:"@referredType,omitempty"`
+	Type_          string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

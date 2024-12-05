@@ -11,7 +11,7 @@ package models
 type ExternalIdentifierMvo struct {
 	// Name of the external system that owns the entity.
 	Owner string `json:"owner,omitempty"`
-	// Type of the identification, typically would be the type of the entity within the external system
+	// Type_ of the identification, typically would be the type of the entity within the external system
 	ExternalIdentifierType string `json:"externalIdentifierType,omitempty"`
 	// identification of the entity within the external system.
 	Id string `json:"id,omitempty"`

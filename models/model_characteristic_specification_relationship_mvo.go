@@ -9,7 +9,7 @@
 package models
 
 type CharacteristicSpecificationRelationshipMvo struct {
-	// Type of relationship such as aggregation, migration, substitution, dependency, exclusivity
+	// Type_ of relationship such as aggregation, migration, substitution, dependency, exclusivity
 	RelationshipType string `json:"relationshipType"`
 	// Name of the target characteristic within the specification
 	Name string `json:"name"`

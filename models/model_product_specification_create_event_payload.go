@@ -11,4 +11,7 @@ package models
 // ProductSpecificationCreateEventPayload generic structure
 type ProductSpecificationCreateEventPayload struct {
 	ProductSpecification *ProductSpecification `json:"productSpecification,omitempty"`
+	Type_                string                `json:"@type,omitempty"`
+	SchemaLocation       string                `json:"@schemaLocation,omitempty"`
+	BaseType             string                `json:"@baseType,omitempty"`
 }

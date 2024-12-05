@@ -23,5 +23,4 @@ type AgreementRef struct {
 	// When sub-classing, this defines the super-class
 	BaseType string `json:"@baseType,omitempty"`
 	// A URI to a JSON-Schema file that defines additional attributes and relationships
-	SchemaLocation string `json:"@schemaLocation,omitempty"`
 }

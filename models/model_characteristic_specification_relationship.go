@@ -9,7 +9,7 @@
 package models
 
 type CharacteristicSpecificationRelationship struct {
-	// Type of relationship such as aggregation, migration, substitution, dependency, exclusivity
+	// Type_ of relationship such as aggregation, migration, substitution, dependency, exclusivity
 	RelationshipType string `json:"relationshipType,omitempty"`
 	// Name of the target characteristic within the specification
 	Name string `json:"name,omitempty"`

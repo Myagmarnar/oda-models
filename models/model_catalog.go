@@ -15,7 +15,7 @@ import (
 type Catalog struct {
 	// Description of this catalog
 	Description string `json:"description,omitempty"`
-	// Type of this Catalog, like Product, Service, Resource etc.
+	// Type_ of this Catalog, like Product, Service, Resource etc.
 	CatalogType string `json:"catalogType,omitempty"`
 
 	ValidFor *TimePeriod `json:"validFor,omitempty"`
@@ -32,5 +32,8 @@ type Catalog struct {
 	// Hyperlink reference
 	Href string `json:"href,omitempty"`
 	// unique identifier
-	Id string `json:"id,omitempty"`
+	Id             string `json:"id,omitempty"`
+	Type_          string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }

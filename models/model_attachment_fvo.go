@@ -26,5 +26,8 @@ type AttachmentFvo struct {
 	// a technical characterization of the attachment content format using IETF Mime Types
 	MimeType string `json:"mimeType"`
 	// unique identifier
-	Id string `json:"id,omitempty"`
+	Id             string `json:"id,omitempty"`
+	Type_          string `json:"@type,omitempty"`
+	SchemaLocation string `json:"@schemaLocation,omitempty"`
+	BaseType       string `json:"@baseType,omitempty"`
 }
